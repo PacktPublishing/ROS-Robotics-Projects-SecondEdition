@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="robot_base" >
+
+<xacro:include filename="$(find robot_description)/urdf/robot_base.urdf.xacro" />
+<xacro:include filename="$(find robot_description)/urdf/robot_arm.urdf.xacro" />
+
+<xacro:arm_joint prefix="arm_base_link" parent="base_link" child="arm_base" originxyz="0.20 0.0 0.145" originrpy="0 0 0"/>
+
+</robot>

@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+
+<robot name="robot_base">
+  <link name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0030946 4.78250032638821E-11 0.053305"
+        rpy="0 0 0" />
+      <mass
+        value="47.873" />
+      <inertia
+        ixx="0.774276574699151"
+        ixy="-1.03781944357671E-10"
+        ixz="0.00763014265820928"
+        iyy="1.64933255189991"
+        iyz="1.09578155845563E-12"
+        izz="2.1239326987473" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 3.14" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/robot_base.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 3.14" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/robot_base.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+<link name="front_left_wheel">
+    <inertial>
+      <origin
+        xyz="-4.1867E-18 0.0068085 -1.65658661799998E-18"
+        rpy="0 0 0" />
+      <mass
+        value="2.6578" />
+      <inertia
+        ixx="0.00856502765719703"
+        ixy="1.5074118157338E-19"
+        ixz="-4.78150098725052E-19"
+        iyy="0.013670640432096"
+        iyz="-2.68136447099727E-19"
+        izz="0.00856502765719703" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wheel.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wheel.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+<link name="front_right_wheel">
+    <inertial>
+      <origin
+        xyz="-4.1867E-18 0.0068085 -1.65658661799998E-18"
+        rpy="0 0 0" />
+      <mass
+        value="2.6578" />
+      <inertia
+        ixx="0.00856502765719703"
+        ixy="1.5074118157338E-19"
+        ixz="-4.78150098725052E-19"
+        iyy="0.013670640432096"
+        iyz="-2.68136447099727E-19"
+        izz="0.00856502765719703" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wheel.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wheel.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+<link name="rear_left_wheel">
+    <inertial>
+      <origin
+        xyz="-4.1867E-18 0.0068085 -1.65658661799998E-18"
+        rpy="0 0 0" />
+      <mass
+        value="2.6578" />
+      <inertia
+        ixx="0.00856502765719703"
+        ixy="1.5074118157338E-19"
+        ixz="-4.78150098725052E-19"
+        iyy="0.013670640432096"
+        iyz="-2.68136447099727E-19"
+        izz="0.00856502765719703" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wheel.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wheel.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+<link name="rear_right_wheel">
+    <inertial>
+      <origin
+        xyz="-4.1867E-18 0.0068085 -1.65658661799998E-18"
+        rpy="0 0 0" />
+      <mass
+        value="2.6578" />
+      <inertia
+        ixx="0.00856502765719703"
+        ixy="1.5074118157338E-19"
+        ixz="-4.78150098725052E-19"
+        iyy="0.013670640432096"
+        iyz="-2.68136447099727E-19"
+        izz="0.00856502765719703" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wheel.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wheel.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+
+<joint name="front_left_wheel_joint" type="continuous">
+    <axis xyz="0 1 0"/>
+    <parent link ="base_link"/>
+    <child link ="front_left_wheel"/>
+    <origin rpy ="0 0 0" xyz= "0.220 0.250 0"/>
+  </joint>
+
+
+<joint name="front_right_wheel_joint" type="continuous">
+    <axis xyz="0 1 0"/>
+    <parent link ="base_link"/>
+    <child link ="front_right_wheel"/>
+    <origin rpy ="0 0 0" xyz= "0.220 -0.250 0"/>
+  </joint>
+
+<joint name="rear_left_wheel_joint" type="continuous">
+    <axis xyz="0 1 0"/>
+    <parent link ="base_link"/>
+    <child link ="rear_left_wheel"/>
+    <origin rpy ="0 0 0" xyz= "-0.220 0.250 0"/>
+  </joint>
+
+<joint name="rear_right_wheel_joint" type="continuous">
+    <axis xyz="0 1 0"/>
+    <parent link ="base_link"/>
+    <child link ="rear_right_wheel"/>
+    <origin rpy ="0 0 0" xyz= "-0.220 -0.250 0"/>
+  </joint>
+<!--######################################################################-->
+<gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+      <controlPeriod>0.001</controlPeriod>
+      <legacyModeNS>false</legacyModeNS>
+    </plugin>
+  </gazebo>
+<!--######################################################################-->
+<gazebo>
+      <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
+        <legacyMode>false</legacyMode>
+        <alwaysOn>true</alwaysOn>
+        <updateRate>1000.0</updateRate>
+        <leftJoint>front_left_wheel_joint, rear_left_wheel_joint</leftJoint>
+        <rightJoint>front_right_wheel_joint, rear_right_wheel_joint</rightJoint>
+        <wheelSeparation>0.5</wheelSeparation>
+        <wheelDiameter>0.2</wheelDiameter>
+        <wheelTorque>10</wheelTorque>
+        <publishTf>1</publishTf>
+        <odometryFrame>map</odometryFrame>
+        <commandTopic>cmd_vel</commandTopic>
+        <odometryTopic>odom</odometryTopic>
+        <robotBaseFrame>base_link</robotBaseFrame>
+        <wheelAcceleration>2.8</wheelAcceleration>
+        <publishWheelJointState>true</publishWheelJointState>
+        <publishWheelTF>false</publishWheelTF>
+        <odometrySource>world</odometrySource>
+        <rosDebugLevel>Debug</rosDebugLevel>
+      </plugin>
+</gazebo>
+<!--######################################################################-->
+<gazebo reference="front_left_wheel">
+ <mu1 value="1.0"/>
+ <mu2 value="1.0"/>
+ <kp value="10000000.0" />
+ <kd value="1.0" />
+ <fdir1 value="1 0 0"/>
+</gazebo>
+
+<gazebo reference="front_right_wheel">
+ <mu1 value="1.0"/>
+ <mu2 value="1.0"/>
+ <kp value="10000000.0" />
+ <kd value="1.0" />
+ <fdir1 value="1 0 0"/>
+</gazebo>
+
+<gazebo reference="rear_left_wheel">
+ <mu1 value="1.0"/>
+ <mu2 value="1.0"/>
+ <kp value="10000000.0" />
+ <kd value="1.0" />
+ <fdir1 value="1 0 0"/>
+</gazebo>
+
+<gazebo reference="rear_left_wheel">
+ <mu1 value="1.0"/>
+ <mu2 value="1.0"/>
+ <kp value="10000000.0" />
+ <kd value="1.0" />
+ <fdir1 value="1 0 0"/>
+</gazebo>
+<!--######################################################################-->
+<transmission name="front_left_wheel_trans" type="SimpleTransmission">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="front_left_wheel_motor">
+   <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+   <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="front_left_wheel_joint">
+   <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="front_right_wheel_trans" type="SimpleTransmission">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="front_right_wheel_motor">
+   <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+   <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="front_right_wheel_joint">
+   <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="rear_left_wheel_trans" type="SimpleTransmission">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="rear_left_wheel_motor">
+   <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+   <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="rear_left_wheel_joint">
+   <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="rear_right_wheel_trans" type="SimpleTransmission">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="rear_right_wheel_motor">
+   <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+   <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="rear_right_wheel_joint">
+   <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+<!--######################################################################-->
+</robot>

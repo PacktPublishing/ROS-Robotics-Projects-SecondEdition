@@ -1,0 +1,18 @@
+# This is an action definition file, which has three parts: the goal, the
+# result, and the feedback.
+#
+# Part 1: the goal, to be sent by the client
+#
+# The amount of time we want to wait
+bool charge_state
+---
+# Part 2: the result, to be sent by the server upon completion
+#
+# How much time we waited
+string battery_status
+---
+# Part 3: the feedback, to be sent periodically by the server during
+# execution.
+#
+# The amount of time that has elapsed from the start
+float32 battery_percentage

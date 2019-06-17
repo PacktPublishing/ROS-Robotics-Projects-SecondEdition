@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+
+<robot name="robot_arm">
+  <link name="world"/>
+  <link name="arm_base">
+    <inertial>
+      <origin
+        xyz="7.7128E-09 -0.063005 -3.01969999961422E-08"
+        rpy="0 0 0" />
+      <mass
+        value="1.6004" />
+      <inertia
+        ixx="0.00552196561445819"
+        ixy="7.9550614501301E-10"
+        ixz="-1.34378458924839E-09"
+        iyy="0.00352397447953875"
+        iyz="-1.10071809773382E-08"
+        izz="0.00553739792746489" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/arm_base.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/arm_base.stl" />
+      </geometry>
+    </collision>
+</link>
+
+<link
+    name="bicep">
+    <inertial>
+      <origin
+        xyz="0.12821 3.5589E-06 0.052492"
+        rpy="0 0 0" />
+      <mass
+        value="1.1198" />
+      <inertia
+        ixx="0.0012474"
+        ixy="-5.4004E-07"
+        ixz="-0.0013148"
+        iyy="0.0072923"
+        iyz="-1.8586E-07"
+        izz="0.0068178" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 -1.5708 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/bicep.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 -1.5708 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/bicep.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+
+  <link
+    name="bottom_wrist">
+    <inertial>
+      <origin
+        xyz="-9.1053E-08 -0.069257 -1.86629999995759E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.27721" />
+      <inertia
+        ixx="0.00104290750143942"
+        ixy="4.37155302268076E-09"
+        ixz="-2.45049603914627E-09"
+        iyy="0.000380518373895034"
+        iyz="-7.56009835172156E-09"
+        izz="0.00106006525067445" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0.13522"
+        rpy="3.14 0 1.5708" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wrist.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.13522"
+        rpy="3.14 0 1.5708" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wrist.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+ <link
+    name="elbow">
+    <inertial>
+      <origin
+        xyz="-0.11109 1.1476E-08 0.046469"
+        rpy="0 0 0" />
+      <mass
+        value="0.84845" />
+      <inertia
+        ixx="0.00079656"
+        ixy="-7.8011E-10"
+        ixz="0.00053616"
+        iyy="0.003576"
+        iyz="4.6326E-10"
+        izz="0.0033698" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0 0.05163 0.20994"
+        rpy="0 -1.5708 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/elbow.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0 0.05163 0.20994"
+        rpy="0 -1.5708 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/elbow.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+<link
+    name="top_wrist">
+    <inertial>
+      <origin
+        xyz="-9.1053E-08 -0.069257 -1.86629999995759E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.27721" />
+      <inertia
+        ixx="0.00104290750143942"
+        ixy="4.37155302268076E-09"
+        ixz="-2.45049603914627E-09"
+        iyy="0.000380518373895034"
+        iyz="-7.56009835172156E-09"
+        izz="0.00106006525067445" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0.13522"
+        rpy="3.14 0 1.5708" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wrist.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.13522"
+        rpy="3.14 0 1.5708" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/wrist.stl" />
+      </geometry>
+    </collision>
+  </link>
+<!--######################################################################-->
+<joint name="arm_base_joint" type="continuous">
+  <axis xyz="0 0 1"/>
+  <parent link="world"/>
+  <child link="arm_base"/>
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.1"/>
+</joint>
+
+<joint name="shoulder_joint" type="continuous">
+  <axis xyz="0 1 0"/>
+  <parent link="arm_base"/>
+  <child link="bicep"/>
+  <origin rpy="0 0 1.5708" xyz="-0.05166 0.0 0.20271"/>
+</joint>
+
+<joint name="bottom_wrist_joint" type="continuous">
+  <axis xyz="0 1 0"/>
+  <parent link="bicep"/>
+  <child link="bottom_wrist"/>
+  <origin rpy="0 0 0" xyz="0.0 -0.05194 0.269"/>
+</joint>
+
+<joint name="elbow_joint" type="continuous">
+  <axis xyz="0 0 1"/>
+  <parent link="bottom_wrist"/>
+  <child link="elbow"/>
+  <origin rpy="0 0 0" xyz="0.0 0 0.13522"/>
+</joint>
+
+<joint name="top_wrist_joint" type="continuous">
+  <axis xyz="0 1 0"/>
+  <parent link="elbow"/>
+  <child link="top_wrist"/>
+  <origin rpy="0 0 0" xyz="0.0 0 0.20994"/>
+</joint>
+<!--######################################################################-->
+<transmission name="arm_base_trans" type="SimpleTransmission">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="arm_base_motor">
+   <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+   <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="arm_base_joint">
+   <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="shoulder_trans" type="SimpleTransmission">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="shoulder_motor">
+   <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+   <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="shoulder_joint">
+   <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="bottom_wrist_trans" type="SimpleTransmission">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="bottom_wrist_motor">
+   <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+   <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="bottom_wrist_joint">
+   <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="elbow_trans" type="SimpleTransmission">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="elbow_motor">
+   <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+   <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="elbow_joint">
+   <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="top_wrist_trans" type="SimpleTransmission">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="top_wrist_motor">
+   <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+   <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="top_wrist_joint">
+   <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<!--######################################################################-->
+<gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+      <controlPeriod>0.001</controlPeriod>
+      <legacyModeNS>false</legacyModeNS>
+    </plugin>
+  </gazebo>
+<!--######################################################################-->
+  <gazebo>
+    <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+      <jointName>arm_base_joint, shoulder_joint, bottom_wrist_joint, elbow_joint, bottom_wrist_joint</jointName>
+    </plugin>
+  </gazebo>
+<!--######################################################################-->
+
+
+</robot>

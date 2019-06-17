@@ -1,0 +1,8 @@
+controller_list:
+  - name: fake_arm_controller
+    joints:
+      - arm_base_joint
+      - shoulder_joint
+      - bottom_wrist_joint
+      - elbow_joint
+      - top_wrist_joint
