@@ -1,0 +1,9 @@
+<launch>
+  <param name="/use_sim_time" value="true" />
+
+  <!-- start world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+
+  <!-- include our robots -->
+  <include file="$(find robot_description)/launch/multiple_robot_base.launch"/>
+</launch> 

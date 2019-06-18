@@ -1,0 +1,43 @@
+<launch>
+
+  <group ns="/robot1">
+  <param name="tf_prefix" value="robot1" />
+   <rosparam file="$(find robot_description)/config/control.yaml" command="load" ns="/robot1" /> 
+   <param name="/robot1/robot_description" command="$(find xacro)/xacro --inorder $(find robot_description)/urdf/robot_base.urdf.xacro nsp:=robot1"/>
+      <node name="urdf_spawner_1" pkg="gazebo_ros" type="spawn_model"
+        args="-x -1.0 -y 0.0 -z 1.0 -unpause -urdf -model robot1 -param robot_description " respawn="false" output="screen">
+      </node>
+
+      <node pkg="robot_state_publisher" type="robot_state_publisher"  name="robot_state_publisher_1">
+        <param name="publish_frequency" type="double" value="30.0" />
+      </node>
+
+      <node name="robot1_controller_spawner" pkg="controller_manager" type="spawner" 
+        args="--namespace=/robot1
+        robot_base_joint_publisher robot_base_velocity_controller
+        --shutdown-timeout 3">
+      </node>
+
+  </group>
+
+<group ns="/robot2">
+  <param name="tf_prefix" value="robot2" />
+   <rosparam file="$(find robot_description)/config/control.yaml" command="load" ns="/robot2" /> 
+   <param name="/robot2/robot_description" command="$(find xacro)/xacro --inorder $(find robot_description)/urdf/robot_base.urdf.xacro nsp:=robot2"/>
+      <node name="urdf_spawner_2" pkg="gazebo_ros" type="spawn_model"
+        args="-x 1.0 -y 0.0 -z 1.0 -unpause -urdf -model robot2 -param robot_description " respawn="false" output="screen">
+      </node>
+
+      <node pkg="robot_state_publisher" type="robot_state_publisher"  name="robot_state_publisher_2">
+        <param name="publish_frequency" type="double" value="30.0" />
+      </node>
+
+      <node name="robot2_controller_spawner" pkg="controller_manager" type="spawner" 
+        args="--namespace=/robot2
+        robot_base_joint_publisher robot_base_velocity_controller
+        --shutdown-timeout 3">
+      </node>
+
+  </group>
+
+</launch>
