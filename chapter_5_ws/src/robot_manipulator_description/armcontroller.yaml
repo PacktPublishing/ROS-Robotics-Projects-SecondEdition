@@ -1,0 +1,23 @@
+arm_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+       - hip
+       - shoulder
+       - elbow
+       - wrist
+    constraints:
+      goal_time: 0.6
+      stopped_velocity_tolerance: 0.05
+      hip: {trajectory: 0.1, goal: 0.1}
+      shoulder: {trajectory: 0.1, goal: 0.1}
+      elbow: {trajectory: 0.1, goal: 0.1}
+      wrist: {trajectory: 0.1, goal: 0.1}
+    stop_trajectory_duration: 0.5
+    state_publish_rate:  25
+    action_monitor_rate: 10
+/gazebo_ros_control:
+    pid_gains:
+      hip: {p: 100.0, i: 1.0, d: 0.1}
+      shoulder: {p: 100.0, i: 1.0, d: 0.1}
+      elbow: {p: 100.0, i: 1.0, d: 0.1}
+      wrist: {p: 100.0, i: 1.0, d: 0.1}

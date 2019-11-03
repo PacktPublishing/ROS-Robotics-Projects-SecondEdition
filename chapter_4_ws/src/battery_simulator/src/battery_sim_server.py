@@ -18,17 +18,14 @@ def batterySim():
 			if battery_level == 100:
 				result.battery_status = "Full"
 				server.set_succeeded(result)
-				print "Setting result!!!"
 				break
-			else:
-				print "Charging...currently, "
+			else:								
 				battery_level += 1
-				print battery_level
+				rospy.loginfo("Charging...currently, %s", battery_level)
 				time.sleep(4)	
 		elif param == 0:
-			print "Discharging...currently, "			
 			battery_level -= 1
-			print battery_level
+			rospy.logwarn("Discharging...currently, %s", battery_level)
 			time.sleep(2)
 
 def goalFun(goal):

@@ -3,7 +3,7 @@
 
 <param name="robot_description" command="$(find xacro)/xacro --inorder $(find robot_description)/urdf/mobile_manipulator.urdf" />
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-	<arg name="world_name" value="/home/robot/custom_worlds/postoffice.world"/>
+	<!--arg name="world_name" value="/home/robot/custom_worlds/postoffice.world"/-->
   </include>
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model mobile_manipulator" />
   <rosparam command="load" file="$(find robot_description)/config/arm_control.yaml" />

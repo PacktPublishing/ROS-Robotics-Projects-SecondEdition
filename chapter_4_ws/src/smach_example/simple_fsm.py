@@ -55,11 +55,9 @@ if __name__ == '__main__':
     StateMachine.add('B', B(), transitions={'1':'C','0':'A'}, remapping={'input':'sm_input','output':'input'})
     StateMachine.add('C', C(), transitions={'1':'D','0':'B'}, remapping={'input':'sm_input','output':'input'})
     StateMachine.add('D', D(), transitions={'1':'A','0':'C'}, remapping={'input':'sm_input','output':'input'})
-
-        sis = smach_ros.IntrospectionServer('server_name', sm, '/SM_ROOT')
-        sis.start()
+  sis = smach_ros.IntrospectionServer('server_name', sm, '/SM_ROOT')
+  sis.start()
 
   sm.execute()
-
-        rospy.spin()
-        sis.stop()
+  rospy.spin()
+  sis.stop()

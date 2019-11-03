@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+
+  <param name="robot_description" textfile="/home/robot/chapter_3_ws/src/robot_manipulator_description/test_robot_arm.urdf" />
+  <!-- Start Gazebo with an empty world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+  <!-- Spawn a CougarBot in Gazebo, taking the description from the
+       parameter server -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model cougarbot" />
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="/home/robot/chapter_3_ws/src/robot_manipulator_description/armcontroller.yaml" command="load"/>
+  <node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" respawn="false" output="screen"/>
+  <rosparam file="/home/robot/chapter_3_ws/src/robot_manipulator_description/joint_state_controller.yaml" command="load"/>
+  <node name="joint_state_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn joint_state_controller" respawn="false" output="screen"/>
+  
+					  
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/>
+
+</launch>
