@@ -1,0 +1,4 @@
+# Range is 0 to 255, larger value = more error
+
+uint8 margin
+---

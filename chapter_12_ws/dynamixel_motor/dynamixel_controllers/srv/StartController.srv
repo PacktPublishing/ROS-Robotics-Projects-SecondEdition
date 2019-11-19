@@ -1,0 +1,9 @@
+string port_name            # serial port that this controller is connected to
+string package_path         # path to ROS package containing controller module
+string module_name          # name of the controller module within that package
+string class_name           # controller class name within that module
+string controller_name      # path to controller config parameters on param server
+string[] dependencies       # optional, list names of all controllers this controller depends on
+---
+bool success
+string reason

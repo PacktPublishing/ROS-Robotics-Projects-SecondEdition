@@ -1,0 +1,32 @@
+<package>
+  <name>dynamixel_driver</name>
+  <version>0.4.1</version>
+  <description>
+    This package provides low level IO for Robotis Dynamixel servos.
+    Fully supports and was tested with AX-12, AX-18, RX-24, RX-28,
+    MX-28, RX-64, EX-106 models. Hardware specific constants are
+    defined for reading and writing information from/to Dynamixel
+    servos. This low level package won't be used directly by most
+    ROS users. The higher level dynamixel_controllers and specific
+    robot joint controllers make use of this package.
+  </description>
+  <maintainer email="arebgun@gmail.com">Antons Rebguns</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/dynamixel_driver</url>
+  <url type="bugtracker">https://github.com/arebgun/dynamixel_motor</url>
+
+  <author>Antons Rebguns</author>
+  <author>Cody Jorgensen</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>diagnostic_msgs</run_depend>
+  <run_depend>python-serial</run_depend>
+
+  <export>
+
+  </export>
+</package>

@@ -1,0 +1,39 @@
+<package>
+  <name>dynamixel_controllers</name>
+  <version>0.4.1</version>
+  <description>
+	This package contains a configurable node, services and a spawner script
+        to start, stop and restart one or more controller plugins. Reusable
+        controller types are defined for common Dynamixel motor joints. Both speed and
+        torque can be set for each joint. This python package can be used by more
+        specific robot controllers and all configurable parameters can be loaded
+        via a yaml file.
+  </description>
+  <maintainer email="arebgun@gmail.com">Antons Rebguns</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/dynamixel_controllers</url>
+  <url type="bugtracker">https://github.com/arebgun/dynamixel_motor</url>
+
+  <author>Antons Rebguns</author>
+  <author>Cody Jorgensen</author>
+  <author>Cara Slutter</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>trajectory_msgs</run_depend>
+  <run_depend>diagnostic_msgs</run_depend>
+  <run_depend>dynamixel_msgs</run_depend>
+  <run_depend>control_msgs</run_depend>
+  <run_depend>dynamixel_driver</run_depend>
+  
+  <export>
+
+  </export>
+</package>

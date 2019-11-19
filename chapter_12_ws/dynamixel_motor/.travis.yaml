@@ -1,0 +1,30 @@
+language:
+  - cpp
+  - python
+python:
+  - "2.7"
+compiler:
+  - gcc
+env:
+  - ROS_DISTRO=hydro  ROSWS=wstool BUILDER=catkin    USE_DEB=true
+  - ROS_DISTRO=indigo  ROSWS=wstool BUILDER=catkin    USE_DEB=true
+# matrix:
+#   allow_failures:
+#     - env: ROS_DISTRO=hydro  ROSWS=wstool BUILDER=catkin    USE_DEB=true
+script:
+  - export CI_SOURCE_PATH=$(pwd)
+  - export REPOSITORY_NAME=${PWD##*/}
+  - echo "Testing branch $TRAVIS_BRANCH of $REPOSITORY_NAME"
+  - sudo sh -c 'echo "deb http://packages.ros.org/ros-shadow-fixed/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros-latest.list'
+  - wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq -y python-catkin-pkg python-rosdep python-wstool python-catkin-tools ros-$ROS_DISTRO-catkin
+  - sudo rosdep init
+  - rosdep update; while [ $? != 0 ]; do sleep 1; rosdep update; done
+  - mkdir -p ~/ros/ws_$REPOSITORY_NAME/src
+  - cd ~/ros/ws_$REPOSITORY_NAME/src
+  - ln -s $CI_SOURCE_PATH . # Link the repo we are testing to the new workspace
+  - cd ..
+  - rosdep install -r -n --from-paths src --ignore-src --rosdistro $ROS_DISTRO -y
+  - source /opt/ros/$ROS_DISTRO/setup.bash
+  - catkin build
