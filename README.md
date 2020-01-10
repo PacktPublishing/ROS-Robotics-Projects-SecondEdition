@@ -7,11 +7,10 @@ Welcome to this repository. This rep contains project files for the book - ROS R
 - Packt : [link](https://www.packtpub.com/in/iot-hardware/ros-robotics-projects-second-edition)
 - Amazon India : [link](https://www.amazon.in/ROS-Robotics-Projects-Operating-learning-ebook/dp/B07ZRWFPHF/ref=sr_1_1?keywords=ramkumar+gandhinathan&qid=1578618609&sr=8-1)
 - Amazon US : [link](https://www.amazon.com/ROS-Robotics-Projects-Operating-learning/dp/1838649328/ref=sr_1_1?keywords=ramkumar+gandhinathan&qid=1578618675&sr=8-1)
-gm
 
 # Approach
 
-This book assumes that you have a basic knowledge about how ROS concepts such as topics, services and message definitions work, though they are touched upon in the beginning. Also given a good knowledge of working with linux environments and python programming covering concepts like functions and classes, the projects should be pretty straightforward to implement. The book consists of ROS projects that involve building and simulating robots in ROS, working with some advance ROS techniques and helps wrap up a tech solution together with multiple robots or machines using high level Learning-AI concepts. 
+This book assumes that you have a basic knowledge about how ROS concepts such as topics, services and message definitions work, though they are touched upon in the beginning. Also given a good knowledge of working with linux environment and python programming covering concepts like functions and classes, the projects should be pretty straightforward to implement. The book consists of ROS projects that involve building and simulating robots in ROS, working with some advance ROS techniques and helps wrap up a tech solution together with multiple robots or machines using high level Learning-AI concepts. 
 
 # What the book covers
 - ***Chapter 1, Getting Started with ROS, is a basic introduction chapter on ROS for beginners*** : This chapter will help you get an idea of the ROS software framework and its concepts.
@@ -30,6 +29,7 @@ This book assumes that you have a basic knowledge about how ROS concepts such as
 # Getting started!
 
 Project files and packages for each and every chapter are named with respect to the chapter names for easy understanding. Simply follow the instructions given in the book to run the project files successfully. You would be able to view working videos of this project here 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLeLcvrwLe185GGwU4NbIvBew53yFPdCg6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Disclaimer
