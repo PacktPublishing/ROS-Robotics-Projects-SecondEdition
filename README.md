@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to this repository. This rep contains project files for the book - ROS Robotics Projects - Second edition, published by Packt. If you already bought the book, congratulations, let's get started. If not, you could buy them from the below links :
+Welcome to this repository. This rep contains project files for the book - ***ROS Robotics Projects - Second edition***, published by Packt. If you already bought the book, congratulations, let's get started. If not, you could buy them from the below links :
 
 <img src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/7/9781838649326-original.jpeg" alt="Book_cover"	title="Book_cover" width="320" height="380"/>
 
