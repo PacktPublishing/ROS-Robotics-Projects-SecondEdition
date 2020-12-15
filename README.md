@@ -1,3 +1,8 @@
+## $5 Tech Unlocked 2021!
+[Buy and download this product for only $5 on PacktPub.com](https://www.packtpub.com/)
+-----
+*The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
+
 # Introduction
 
 Welcome to this repository. This rep contains project files for the book - ***ROS Robotics Projects - Second edition***, published by Packt. If you already bought the book, congratulations, let's get started. If not, you could buy them from the below links :
